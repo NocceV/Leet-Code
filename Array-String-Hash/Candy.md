@@ -4,6 +4,7 @@ Usar ponteiros para solucionar
 # Approach
 Criei um array com numeros 1, e percorri indo e voltando o array de ratings, para o final ter o valor de cada slot.
 
+![Imagem da solução](./Candy.png "Candy Image")
 # Complexity
 - Time complexity:
 O(n)
