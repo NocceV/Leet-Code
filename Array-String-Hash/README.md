@@ -15,7 +15,7 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 ### 📚 Hash
 
 #### 🔹 Fácil
-- [Two Sum](https://leetcode.com/problems/two-sum/)
+- 
 
 #### 🔸 Médio
 - 
@@ -28,7 +28,7 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 ### 🧵 String
 
 #### 🔹 Fácil
-- 
+- [RomanToInt]()
 
 #### 🔸 Médio
 - 
@@ -41,13 +41,13 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 ### 🗂️ Array
 
 #### 🔹 Fácil
-- 
+- [RemoveSuplicates]()
 
 #### 🔸 Médio
-- 
+- [RemoveSuplicates2]()
 
 #### 🔺 Difícil
-- 
+- [Candy]()
 
 ---
 
