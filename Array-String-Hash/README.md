@@ -31,7 +31,7 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 - [RomanToInt]()
 
 #### 🔸 Médio
-- 
+- [StrStr]()
 
 #### 🔺 Difícil
 - 
