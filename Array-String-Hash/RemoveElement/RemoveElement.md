@@ -1,6 +1,7 @@
 # Intuition
 Criar um solução usando ponteiro
 
+![Imagem da solução](./RemoveElement "RemoveElement Image")
 # Approach
 O ponteiro vai indicar o lugar que é para colocar o valor != do value e o i vai ir iterando e comparando todos os valores. Caso seja = ele so pula, caso seja diferente colocamos o valor da posição i no lugar da posição ponteiro e atualizamos o ponteiro++ e i++
 
