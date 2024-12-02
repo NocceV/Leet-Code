@@ -29,6 +29,7 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 
 #### 🔹 Fácil
 - [RomanToInt]()
+- [IsPalimdrome]()
 
 #### 🔸 Médio
 - [StrStr]()
