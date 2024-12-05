@@ -49,10 +49,12 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 
 #### 🔸 Médio
 - [RemoveSuplicates2]()
-
+- [MaxArea]()
+  
 #### 🔺 Difícil
 - [Candy]()
 - [3Sum]()
+  
 
 ---
 
