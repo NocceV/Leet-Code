@@ -45,6 +45,7 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 #### 🔹 Fácil
 - [RemoveSuplicates]()
 - [RemoveElement]()
+- -[IsSubsequence]()
 
 #### 🔸 Médio
 - [RemoveSuplicates2]()
