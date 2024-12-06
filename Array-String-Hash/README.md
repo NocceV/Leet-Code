@@ -36,7 +36,7 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 - [StrStr]()
 
 #### 🔺 Difícil
-- 
+- [LettersCombinations]()
 
 ---
 
