@@ -38,6 +38,7 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 #### 🔺 Difícil
 - [LettersCombinations]()
 - [MyAtoi]()
+- [PartitionString]()
 
 ---
 
