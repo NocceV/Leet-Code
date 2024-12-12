@@ -34,11 +34,11 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 
 #### 🔸 Médio
 - [StrStr]()
+- [PartitionString]()
 
 #### 🔺 Difícil
 - [LettersCombinations]()
 - [MyAtoi]()
-- [PartitionString]()
 
 ---
 
