@@ -60,6 +60,7 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 - [3Sum]()
 - [FindMedianSortedArrays]()
 - [FirstMissingPositive]()
+- [ThreeSumClosest]()
   
 
 ---
