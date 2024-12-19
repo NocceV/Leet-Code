@@ -54,6 +54,7 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 #### 🔸 Médio
 - [RemoveSuplicates2]()
 - [MaxArea]()
+- [IsPalindrome]()
   
 #### 🔺 Difícil
 - [Candy]()
