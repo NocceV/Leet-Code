@@ -16,6 +16,7 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 
 #### 🔹 Fácil
 - [ContainsDuplicate]()
+- [Intersection]()
 
 #### 🔸 Médio
 - [Kaitenzushi]()
