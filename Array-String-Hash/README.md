@@ -23,6 +23,7 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 - [Kaitenzushi]()
 - [GetIntersectionNode]()
 - [IsHappy]()
+- [Intersect]()
 
 #### 🔺 Difícil
 - [TwoSum]()
