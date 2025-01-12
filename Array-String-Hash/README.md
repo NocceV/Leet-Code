@@ -18,6 +18,7 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 - [ContainsDuplicate]()
 - [Intersection]()
 - [MissingNumber]()
+- [IsAnagram]()
 
 #### 🔸 Médio
 - [Kaitenzushi]()
