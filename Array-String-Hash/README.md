@@ -25,6 +25,7 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 - [GetIntersectionNode]()
 - [IsHappy]()
 - [Intersect]()
+- [BullsAndCows]()
 
 #### 🔺 Difícil
 - [TwoSum]()
