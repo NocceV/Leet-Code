@@ -32,6 +32,7 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 - [TwoSum]()
 - [WordPattern]()
 - [LongestPalindrome]()
+- [SortedArrayByFrequency]()
 
 ---
 
