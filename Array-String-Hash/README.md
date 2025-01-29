@@ -53,6 +53,7 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 - [MyAtoi]()
 - [MinWindow]()
 - [Uniform Integers]()
+- [TitleToNumber]()
 
 ---
 
