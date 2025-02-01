@@ -79,6 +79,7 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 - [Rotate]()
 - [SortColors]()
 - [FourSum]()
+- [FindSubstring]()
   
 
 ---
