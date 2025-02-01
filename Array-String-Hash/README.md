@@ -65,7 +65,7 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 - [IsSubsequence]()
 
 #### 🔸 Médio
-- [RemoveSuplicates2]()
+- [RemoveSuplicates2]() ✅
 - [MaxArea]()
 - [IsPalindrome]()
 - [MergeTwoLits]()
