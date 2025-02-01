@@ -68,6 +68,7 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 - [RemoveSuplicates2]()
 - [MaxArea]()
 - [IsPalindrome]()
+- [MergeTwoLits]()
   
 #### 🔺 Difícil
 - [Candy]()
