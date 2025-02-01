@@ -1,8 +1,11 @@
 # Intuition
-Usar ponteiros para ignorar os elementos repetidos
+Usar ponteiros para ignorar os elementos repetidos usando um contador de vezes que o elemento apareceu
 
 # Approach
-<A principio tentei com um cetor auxiliar, logo depois percebe-se que nao precisa do vetor auxiliar.Eu vou usando comprações entre o numero anterior e o atual, atravéz de ponteiros.
+Dentro do for loop nos comparamos o valor atual em i e o anterior, se eles sao iguais e o numero de vezes que apareceram for menor que 2, nos igualamos o vetor na posicao pointer ao valor atual em i damos um appar++ e pointer++
+Caso as aparições sejam maiores que 2, nos simplesmente ignoramos
+Agora caso nao entre no if do valor atual em i ser igual ao anteior, nos igualamos o valor na posicao de pointer ao valor em i e colocarmos o numero de aparicoes = 1 e damos pointer++
+No fim retornamos pointer
 
 # Complexity
 - Time complexity: O(n)
@@ -13,30 +16,36 @@ Usar ponteiros para ignorar os elementos repetidos
 ```csharp []
 public class Solution {
     public int RemoveDuplicates(int[] nums) {
-    if (nums.Length <= 2) {
-        return nums.Length; // Se a matriz tem 2 ou menos elementos, não há duplicatas a remover.
-    }
+        
+        //Create a pointer = 0
+        //Create a appeareances = 0
+        //Create a for loop
+        //Inside the for loop we will compare the values
+        //if the valies are equals and de number of appearances is down by 2, then we cont appar++
+        //Elase we restart the values
+        //Return the pointer
 
-    int count = 1; // Conta as ocorrências do elemento atual.
-    int pointer = 1; // Aponta para o próximo local disponível na matriz resultante.
+        int pointer = 1;
+        int appar = 1;
 
-    for (int i = 1; i < nums.Length; i++) {
-        if (nums[i] == nums[i - 1]) {
-            // Se o elemento atual é igual ao anterior e o count < 2, permite mais uma ocorrência.
-            if (count < 2) {
+        for(int i = 1;i<nums.Length;i++){
+
+            if(nums[i-1] == nums[i]){
+                if(appar < 2){
+                    nums[pointer] = nums[i];
+                    appar++;
+                    pointer++;
+                }
+            }
+            else{
                 nums[pointer] = nums[i];
                 pointer++;
-                count++;
+                appar = 1;
             }
-        } else {
-            // Se encontrar um novo número, reinicia o count e move o ponteiro.
-            nums[pointer] = nums[i];
-            pointer++;
-            count = 1; // Reseta a contagem para o novo número.
+            
         }
-    }
 
-    return pointer; // Retorna o tamanho da nova matriz sem duplicatas excessivas.
-}
+        return pointer;
+    }
 }
 ```
