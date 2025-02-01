@@ -60,7 +60,7 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 ### 🗂️ Array
 
 #### 🔹 Fácil
-- [RemoveSuplicates]()
+- [RemoveSuplicates]() ✅
 - [RemoveElement]()
 - [IsSubsequence]()
 
@@ -89,3 +89,5 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 1. Escolha uma categoria e encontre a questão pelo nível de dificuldade.
 2. Clique no link para acessar o problema no LeetCode.
 3. Resolva o problema e melhore suas habilidades!
+
+✅ = Revisado
