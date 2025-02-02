@@ -14,14 +14,51 @@ public class Solution {
         //retorno n
 
 
-        int ponteiro = 0;
-        for(int i=0;i<nums.Length;i++){
+        // int ponteiro = 0;
+        // for(int i=0;i<nums.Length;i++){
+        //     if(nums[i] != val){
+        //         nums[ponteiro]=nums[i];
+        //         ponteiro++;
+        //     }
+        // }
+
+        // return ponteiro;
+
+        //i create a pointer = 0 
+        //i create a for loop  
+        //i will check if the value = number inside the drawer
+
+        // int pointer = 0;
+        
+        // for(int i = 0;i< nums.Length;i++){
+            
+        //     if(nums[i]!=val){
+        //         nums[pointer]= nums[i];
+        //         pointer = pointer+1; 
+        //     }
+        // }
+
+        // return pointer;
+
+
+        //Revisão:
+
+        //Create a pointer caled "pointer"
+        //Create a for loop starting in 0
+        //Compare the values
+        //If it is not equal to val, we set the value at position "pointer" equal to the value at position i
+        //Else we just i++
+        //Time = O(n)
+        //Space = O(1)
+
+        int pointer = 0;
+        for(int i = 0;i<nums.Length;i++){
             if(nums[i] != val){
-                nums[ponteiro]=nums[i];
-                ponteiro++;
+                nums[pointer] = nums[i];
+                pointer++;
             }
         }
 
-        return ponteiro;
+        return pointer;
     }
 }
