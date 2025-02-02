@@ -1,8 +1,8 @@
 # Intuition
-Usar ponteiros para verificar se é um palimdromo, ignorando os caracteres especiais
+Usar ponteiros esquerda e direita para verificar se é um palimdromo, ignorando os caracteres especiais ou espaços
 
 # Approach
-Primeiro coloquei toda a string com letras minusculas, criei os ponteiros, um começando no final e o outro no começo, abri um laço for e fui comparando, ignorando os espaços e caracteres especiais. Caso as strings fossem diferentes em determinado ponto, a função ja retorna false, se ir ate o fim do laço while, quer dizer que a string é um palimdromo e retorna true
+Primeiro coloquei toda a string com letras minusculas, criei os ponteiros "left" e "right", um começando no final e o outro no começo, abri um laço while e fui comparando, ignorando os espaços e caracteres especiais. Caso as strings fossem diferentes em determinado ponto, a função ja retorna false, se ir ate o fim do laço while, quer dizer que a string é um palimdromo e retorna true
 
 # Complexity
 - Time complexity: O(n)
@@ -33,13 +33,56 @@ public class Solution {
         //se a posicao dos ponteiros possuir um caractere especial eu dou o ponteiro ++ ou --
         //caso va ate o final do repeidor quer dizer q é palindromo e eu retorno true
 
-        s= s.ToLower();
-        bool IsPalindrome = true;
+        // s= s.ToLower();
+        // bool IsPalindrome = true;
+
+        // int left = 0;
+        // int right = s.Length-1;
+
+        // while(left < right){
+
+        //     if(s[left] == ' ' || !char.IsLetterOrDigit(s[left])){
+        //         left++;
+        //     }
+        //     else if(s[right] == ' ' || !char.IsLetterOrDigit(s[right])){
+        //         right--;
+        //     }
+        //     else if(s[left] != s[right]){
+        //         IsPalindrome = false;
+        //         return IsPalindrome;
+        //     }
+        //     else{
+        //         right--;
+        //         left++;
+        //     }
+        // }
+
+        // return IsPalindrome;
+
+        //Revisão
+
+        //Check if the string is null or one caracter
+        //Transform all the phrase in lowercase
+        //Create the Left and Right pointers
+        //Create a "while" that left wants to be menor than right
+        //Compare the values in the string
+        //If in left or right is " " or special caracters we just skip with Left++ or Right-- depending where is the "error"
+        //If the values are equal e just continue Left++ and Right--
+        //Else we return false
+        //If the loop is over we return true because is a palindrome
+        //Time = O(n)
+        //Space = O(1)
+
+        if(s == null || s.Length == 1){
+            return true;
+        }
+
+        s = s.ToLower();
 
         int left = 0;
         int right = s.Length-1;
 
-        while(left < right){
+        while(left<right){
 
             if(s[left] == ' ' || !char.IsLetterOrDigit(s[left])){
                 left++;
@@ -47,17 +90,16 @@ public class Solution {
             else if(s[right] == ' ' || !char.IsLetterOrDigit(s[right])){
                 right--;
             }
-            else if(s[left] != s[right]){
-                IsPalindrome = false;
-                return IsPalindrome;
+            else if(s[right]==s[left]){
+                left++;
+                right--;
             }
             else{
-                right--;
-                left++;
+                return false;
             }
         }
 
-        return IsPalindrome;
+        return true;
     }
 }
 ```
