@@ -52,33 +52,71 @@ public class Solution {
         // return lista;
 
         //Solução correta
-        Array.Sort(nums);
+        // Array.Sort(nums);
+
+        // IList<IList<int>> result = new List<IList<int>>();
+        // int i = 0;
+
+        // while (i < nums.Length - 2)
+        // {
+        //     var j = i + 1;
+        //     var k = nums.Length - 1;
+        //     while (j < k)
+        //     {
+        //         var sum = nums[i] + nums[j] + nums[k];
+        //         if (sum == 0)
+                
+        //             result.Add(new List<int>() {nums[i], nums[j], nums[k]});
+
+        //         if (sum >= 0)
+        //             while(j < k && nums[k] == nums[--k]) { }
+        //         if (sum <= 0)
+        //             while(j < k && nums[j] == nums[++j]) { }
+        //     }
+
+        //     while(i < nums.Length - 2 && nums[i] == nums[++i]) { }
+        // }
+
+        // return result;
+
+        //Revisão
+
+        //Create a new list of integers
+        //Sort the array
+        //Start a for loop, ending in array.length-2, because we want 3 numbers to have a sum
+        //Create the pointers left and right
+        //Create a variable sum, that will represents the sum of the actual values.
+        //If the sum is == 0, we add the values in a new array, and add the new array in the list created and left++
+        //If the sum is < 0 or the actual value is equal the left--, we just left++
+        //If the sum is < 0 or the actual value is equal the right++, we just right--
+        //return the list
+        //Time = O(n^2)
+        //Space = O(n^2)
+        //menor e ao quadrado
 
         IList<IList<int>> result = new List<IList<int>>();
-        int i = 0;
+        Array.Sort(nums);
 
-        while (i < nums.Length - 2)
-        {
-            var j = i + 1;
-            var k = nums.Length - 1;
-            while (j < k)
-            {
-                var sum = nums[i] + nums[j] + nums[k];
-                if (sum == 0)
-                
-                    result.Add(new List<int>() {nums[i], nums[j], nums[k]});
+        for(int i = 0;i < nums.Length-2;){
+            int left = i+1;
+            int right = nums.Length-1;
 
-                if (sum >= 0)
-                    while(j < k && nums[k] == nums[--k]) { }
-                if (sum <= 0)
-                    while(j < k && nums[j] == nums[++j]) { }
+            while(left< right){
+                int tempSum = nums[left]+nums[right]+nums[i];
+                if(tempSum == 0){
+                    result.Add(new List<int>(){nums[i], nums[left], nums[right]});               
+                }
+                if(tempSum >= 0){
+                    while(left < right && nums[right] == nums[--right]) { }
+                }
+                if(tempSum <= 0){
+                    while(left < right && nums[left] == nums[++left]) { }
+                }
             }
 
             while(i < nums.Length - 2 && nums[i] == nums[++i]) { }
         }
 
         return result;
-
-
     }
 }
