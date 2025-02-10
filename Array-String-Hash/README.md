@@ -91,3 +91,4 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 3. Resolva o problema e melhore suas habilidades!
 
 ✅ = Revisado
+☑️ = Revisado porém com dúvidas e/ou sem a melhor solução
