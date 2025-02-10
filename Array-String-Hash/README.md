@@ -74,7 +74,7 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 - [Candy]()
 - [3Sum]() ✅
 - [FindMedianSortedArrays]() ☑️
-- [FirstMissingPositive]()
+- [FirstMissingPositive]() ☑️
 - [ThreeSumClosest]()
 - [Rotate]()
 - [SortColors]()
