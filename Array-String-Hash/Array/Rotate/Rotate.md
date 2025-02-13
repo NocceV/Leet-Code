@@ -2,7 +2,9 @@
 Usar a brute force para resolver, ou seja, n^2
 
 # Approach
-USar reversao de array para chegar ao resultado
+USar reversao de array para chegar ao resultado, primeiro pegando o valor de quantos swaps vamos fazer, como por exemplo k = 3. nums.Length = 7. 
+k = k% nums.length. --> k = 3
+Usamos este valor para dar swap, entao primeiro damos swap em todo o vetor, apos isso damos swap ate k-1, e depois de k ate nums.length-1.
 
 # Complexity
 - Time complexity: O(n)
@@ -61,7 +63,12 @@ public class Solution {
         //reversao
         //uso dois ponteiros um esquerda e outro direita e inverto tudo dentro do grupo
 
+        //Revisao
 
+        //Calculate the real swap value in the array
+        //Get the array reversed
+        //Get the array from position 0 to k-1 reversed
+        //Get the array from position k to nums.Lenght - 1 reversed
 
         k = k % nums.Length;
         Revert(nums, 0, nums.Length - 1);
@@ -73,16 +80,14 @@ public class Solution {
 
     public void Revert(int[] array,int start,int end){
 
-        int left = start;
-        int right = end;
         int temp;
-
-        while(left<right){
-            temp = array[left];
-            array[left] = array[right];
-            array[right] = temp;
-            left++;
-            right--;
+        
+        while(start<end){
+            temp = array[start];
+            array[start] = array[end];
+            array[end] = temp;
+            start++;
+            end--;
         }
     }
 
