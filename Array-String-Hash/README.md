@@ -77,7 +77,7 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 - [FirstMissingPositive]() ☑️
 - [ThreeSumClosest]() ✅
 - [Rotate]() ✅
-- [SortColors]()
+- [SortColors]() ☑️
 - [FourSum]()
 - [FindSubstring]()
   
