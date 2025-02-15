@@ -71,7 +71,7 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 - [MergeTwoLits]() ✅
   
 #### 🔺 Difícil
-- [Candy]()
+- [Candy]() ☑️
 - [3Sum]() ✅
 - [FindMedianSortedArrays]() ☑️
 - [FirstMissingPositive]() ☑️
