@@ -41,7 +41,7 @@ Lista de questões do LeetCode organizadas por categorias e níveis de dificulda
 #### 🔹 Fácil
 - [RomanToInt]()
 - [IsPalimdrome]()
-- [ReverseString]()
+- [ReverseString]() ✅
 - [KthFactor]()
 
 #### 🔸 Médio
