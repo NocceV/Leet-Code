@@ -15,54 +15,64 @@ O(1)
 ```csharp []
 public class Solution {
     public int RomanToInt(string s) {
-        
-        
-        int temporary2 = calculo(s,s.Length-1);
-        int result = temporary2;
+        //Revisao 
+        //Create a roman transformer function
+        //Create a first number
+        //Create a for loop
+            //Transform the numbers
+            //If the number transformed is less than the previously
+                //we sum
+            //else we sum -=
 
-        for(int i=s.Length-2;i>=0;i--){
-           int temporary = calculo(s,i);
+        //Time = O(n)
+        //Space = O(1)
 
-           if(temporary >= temporary2){
-                result+= temporary;
-                temporary2=temporary;
-           }
-           else{
-                result-= temporary;
-                temporary2=temporary;
-           }
-        }
-        return result;
+        int after = transformer(s[s.Length-1]);  
+        int actual;
 
+        int sum = after;
+
+        for(int i = s.Length-2;i>=0;i--){
+            actual = transformer(s[i]);
+
+            if(actual < after){
+                sum -= actual;
+            }
+            else{
+                sum+= actual;
+            }
+
+            after = actual;
+        }  
+
+        return sum;  
     }
 
-    public static int calculo(string s,int i){
-        int temporary;
-        if(s[i] == 'I'){
-            temporary = 1;
+    public int transformer(char s){
+        //Function to transform the char into int in place
+        if(s == 'I'){
+            return 1;
         }
-        else if(s[i]== 'V'){
-            temporary = 5;
+        else if(s== 'V'){
+            return 5;
         }
-        else if(s[i] == 'X'){
-            temporary = 10;
+        else if(s == 'X'){
+            return 10;
         }
-        else if(s[i] == 'L'){
-            temporary = 50;
+        else if(s == 'L'){
+            return 50;
         }
-        else if(s[i] == 'C'){
-            temporary = 100;
+        else if(s == 'C'){
+            return 100;
         }
-        else if(s[i] == 'D'){
-            temporary = 500;
+        else if(s == 'D'){
+            return 500;
         }
         else{
-            temporary = 1000;
+            return 1000;
         }
             
-        return temporary;    
-
-        
+        return -1;   
     }
 }
 ```
